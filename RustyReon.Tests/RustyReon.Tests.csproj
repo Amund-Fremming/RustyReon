@@ -18,4 +18,8 @@
     <Using Include="Xunit" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\RustyReon\RustyReon.csproj" />
+  </ItemGroup>
+
 </Project>

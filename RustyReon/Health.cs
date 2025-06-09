@@ -1,6 +1,6 @@
 ﻿namespace RustyReon;
 
-public class Class1
+public class Health
 {
-
+    public bool Test_Health_OK() => true;
 }
