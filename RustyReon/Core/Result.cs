@@ -5,28 +5,36 @@ namespace RustyReon.Core;
 public class Result<T> where T : class
 {
     private readonly T? _data;
-    private readonly Exception? _exception;
-    private readonly string _message;
+    private readonly Error? _error;
 
-    private Result(T? data = null, Exception? exception = null, string? message = "")
+    private Result(T? data = null, Error? error = null)
     {
         _data = data;
-        _exception = exception;
-        _message = message ?? string.Empty;
+        _error = error;
     }
 
     public T Unwrap()
     {
-        if (_exception is not null)
+        if (_error is not null)
         {
-            throw new EmptyResultException("Cannot unwrap an empty result");
+            throw new ResultException("Cannot unwrap an empty result");
         }
         
         return _data!;
     }
 
+    public string GetErrorMessage()
+    {
+        if (_error is null)
+        {
+            throw new ResultException("Cannot get message from a failed result");
+        }
+
+        return _error.Message;
+    }
+
     public static implicit operator Result<T>(T data) => new(data);
-    // implicit operator for return av error
+    public static implicit operator Result<T>(Error error) => new(null, error);
 }
 
 public class Result<TData, TError> where TData : class where TError : class 
@@ -44,13 +52,22 @@ public class Result<TData, TError> where TData : class where TError : class
     {
         if (_error is not null)
         {
-            throw new EmptyResultException("Cannot unwrap an empty result");
+            throw new ResultException("Cannot unwrap an empty result");
         }
         
         return _data!;
     }
 
+    public TError GetError()
+    {
+        if (_error is not null)
+        {
+            throw new ResultException("Cannot get error from a successful result");
+        }
+
+        return _error!;
+    }
+
     public static implicit operator Result<TData, TError>(TData data) => new(data);
     public static implicit operator Result<TData, TError>(TError error) => new(null, error);
-    // impliic operator av result error
 }
