@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RustyReon")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c7942174fcb6c2d84d1cd4645507d5474e87ffa3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+47e6645c80105bb9543e47c8a07e1e85345eefb1")]
 [assembly: System.Reflection.AssemblyProductAttribute("RustyReon")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RustyReon")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
