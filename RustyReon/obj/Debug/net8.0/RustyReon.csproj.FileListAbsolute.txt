@@ -1,0 +1,12 @@
+C:\Code\PersonalSandbox\RustyReon\RustyReon\bin\Debug\net8.0\RustyReon.deps.json
+C:\Code\PersonalSandbox\RustyReon\RustyReon\bin\Debug\net8.0\RustyReon.dll
+C:\Code\PersonalSandbox\RustyReon\RustyReon\bin\Debug\net8.0\RustyReon.pdb
+C:\Code\PersonalSandbox\RustyReon\RustyReon\obj\Debug\net8.0\RustyReon.GeneratedMSBuildEditorConfig.editorconfig
+C:\Code\PersonalSandbox\RustyReon\RustyReon\obj\Debug\net8.0\RustyReon.AssemblyInfoInputs.cache
+C:\Code\PersonalSandbox\RustyReon\RustyReon\obj\Debug\net8.0\RustyReon.AssemblyInfo.cs
+C:\Code\PersonalSandbox\RustyReon\RustyReon\obj\Debug\net8.0\RustyReon.csproj.CoreCompileInputs.cache
+C:\Code\PersonalSandbox\RustyReon\RustyReon\obj\Debug\net8.0\RustyReon.sourcelink.json
+C:\Code\PersonalSandbox\RustyReon\RustyReon\obj\Debug\net8.0\RustyReon.dll
+C:\Code\PersonalSandbox\RustyReon\RustyReon\obj\Debug\net8.0\refint\RustyReon.dll
+C:\Code\PersonalSandbox\RustyReon\RustyReon\obj\Debug\net8.0\RustyReon.pdb
+C:\Code\PersonalSandbox\RustyReon\RustyReon\obj\Debug\net8.0\ref\RustyReon.dll
